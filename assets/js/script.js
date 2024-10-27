@@ -93,6 +93,9 @@ function handleAddTask(event) {
   localStorage.setItem("tasks", JSON.stringify(taskList));
 
   $(".modal").modal("hide");
+
+  renderTaskList()
+
 }
 const saveChanges = $("#save-changes");
 saveChanges.on("click", handleAddTask);
